@@ -24,7 +24,7 @@ body {
 .carousel-container {
     width: 90vw; /* Ocupa 90% da largura da tela */
     max-width: 400px; /* Define um limite para telas grandes */
-    height: auto; /* Ajusta automaticamente */
+    height: auto;
     aspect-ratio: 3 / 4; /* Mantém proporção de 3:4 */
     overflow: hidden;
     margin: 20px auto; 
@@ -41,13 +41,12 @@ body {
     width: 100%;
     height: 100%;
     transition: transform 0.5s ease-in-out;
-    overflow: contain;
 }
 
 .carousel img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain; /* Mantém a imagem inteira dentro do espaço sem cortes */
     max-height: 80vh;
     display: block;
     margin: 0 auto;
@@ -55,22 +54,14 @@ body {
     border-radius: 10px;
 }
 
-.contador, .p2 {
-    font-size: 25px;
-    font-style: initial;
-    color: white;
-    margin-top: 5px;
-    border-top: 2px solid rgb(250, 38, 151);
-}
-
-/* Responsividade melhorada */
+/* Responsividade */
 @media screen and (max-width: 480px) {
     .carousel-container {
-        width: 90vw; /* Mantém 90% da tela */
-        max-width: 350px; /* Máximo para não estourar */
+        max-width: 350px;
     }
     body {
         padding: 15px;
         margin: 30px auto;
     }
 }
+
