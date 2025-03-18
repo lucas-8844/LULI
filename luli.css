@@ -69,12 +69,6 @@ body {
         width: 90vw; /* Mantém 90% da tela */
         max-width: 350px; /* Máximo para não estourar */
     }
-    @media (max-width: 768px) {
-        .carousel img {
-            width: 100%;
-            height: auto;
-        }
-    }
     body {
         padding: 15px;
         margin: 30px auto;
