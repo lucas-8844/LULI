@@ -41,11 +41,12 @@ body {
     width: 100%;
     height: 100%;
     transition: transform 0.5s ease-in-out;
+    overflow: contain;
 }
 
 .carousel img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: contain;
     flex: 0 0 100%; /* Cada imagem ocupará 100% do container */
     border-radius: 10px;
@@ -65,7 +66,12 @@ body {
         width: 90vw; /* Mantém 90% da tela */
         max-width: 350px; /* Máximo para não estourar */
     }
-    
+    @media (max-width: 768px) {
+        .carousel img {
+            width: 100%;
+            height: auto;
+        }
+    }
     body {
         padding: 15px;
         margin: 30px auto;
