@@ -46,11 +46,10 @@ body {
 .carousel img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que a imagem ocupe o espaço sem deformar */
-    flex: 0 0 100%;
+    object-fit: cover;
+    flex: 0 0 100%; /* Cada imagem ocupará 100% do container */
     border-radius: 10px;
 }
-
 
 .contador, .p2 {
     font-size: 25px;
