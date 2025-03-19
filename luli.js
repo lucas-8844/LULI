@@ -59,3 +59,9 @@ function atualizarContador() {
 // Atualiza o contador a cada segundo
 setInterval(atualizarContador, 1000);
 atualizarContador(); // Chama a função inicialmente para não esperar 1 segundo
+
+window.onload = function() {
+    let spotifyPlayer = document.getElementById("spotifyPlayer");
+    spotifyPlayer.src += "?autoplay=1"; // Adiciona autoplay ao carregar
+};
+
