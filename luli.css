@@ -47,9 +47,10 @@ body {
 .carousel img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que a imagem ocupe o espaço sem deformar */
+    object-fit: contain; /* Garante que a imagem inteira apareça sem cortes */
     flex: 0 0 100%;
     border-radius: 10px;
+    background-color: black; /* Evita espaços vazios */
 }
 
 .contador, .p2 {
