@@ -10,11 +10,12 @@ function changeImage() {
         index = 0; // Retorna à primeira imagem
     }
 
-    carousel.style.transform = `translateX(${-index * 300}px)`;
+    carousel.style.transform = `translateX(${-index * 100}%)`;
 }
 
 // Troca de imagem a cada 3 segundos
 setInterval(changeImage, 3000);
+
 
 
 const dataInicio = new Date("2023-10-22T00:00:00");
