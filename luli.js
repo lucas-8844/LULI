@@ -14,7 +14,7 @@ function changeImage() {
 }
 
 // Troca de imagem a cada 3 segundos
-setInterval(changeImage, 2000);
+setInterval(changeImage, 3000);
 
 
 const dataInicio = new Date("2023-10-22T00:00:00");
